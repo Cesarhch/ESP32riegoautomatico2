@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../ESP32riegoautomatico1"
+		},
+		{
+			"name": "ESP32riegoautomatico2",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
