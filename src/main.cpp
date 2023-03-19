@@ -15,12 +15,14 @@ void setup()
 
 void loop()
 {
+  digitalWrite(bomba, LOW);
   valorsensor = analogRead(sensor);
   if(valorsensor>=1500){
     digitalWrite(bomba, HIGH);
     delay(1000);
+    digitalWrite(bomba, LOW);
   }
-  digitalWrite(bomba, LOW);
+  
   esp_sleep_enable_timer_wakeup(10 * 60 * 1000000); // Despertar cada 10 minutos
   esp_deep_sleep_start();
 }
